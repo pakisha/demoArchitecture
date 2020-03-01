@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="bGk-ij-61Z">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" title="Search" id="M1n-rI-OBx" customClass="SearchViewController" customModule="DemoArchitecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t2o-Hh-LYd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbk-DJ-B6t">
+                                <rect key="frame" x="30" y="74" width="80" height="30"/>
+                                <state key="normal" title="Title details"/>
+                                <connections>
+                                    <action selector="titleDetails" destination="M1n-rI-OBx" eventType="touchUpInside" id="mVT-DS-4r8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Tbk-DJ-B6t" firstAttribute="leading" secondItem="FJI-xX-jU4" secondAttribute="leading" constant="30" id="P69-pS-LJS"/>
+                            <constraint firstItem="Tbk-DJ-B6t" firstAttribute="top" secondItem="FJI-xX-jU4" secondAttribute="top" constant="30" id="ac3-It-Tdz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FJI-xX-jU4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fq4-xH-7IO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="73"/>
+        </scene>
+    </scenes>
+</document>

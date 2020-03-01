@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Library-->
+        <scene sceneID="zwa-nu-jro">
+            <objects>
+                <viewController storyboardIdentifier="LibraryViewController" title="Library" id="RVW-ft-u2v" customClass="LibraryViewController" customModule="DemoArchitecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r5d-2O-NOB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W7l-ha-NJQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Rv9-WU-FhB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYI-mg-r5Q">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="50"/>
+                                                <state key="normal" title="My Perks"/>
+                                                <connections>
+                                                    <action selector="myPerks" destination="RVW-ft-u2v" eventType="touchUpInside" id="Uq5-oA-2p8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2K-dA-BoB">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="50"/>
+                                                <state key="normal" title="Library"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8Ao-65-krq"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rv9-WU-FhB" secondAttribute="bottom" id="ApT-YO-Sx7"/>
+                                    <constraint firstItem="Rv9-WU-FhB" firstAttribute="leading" secondItem="W7l-ha-NJQ" secondAttribute="leading" id="Jr9-N1-vUy"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rv9-WU-FhB" secondAttribute="trailing" id="kF9-Gz-Ygl"/>
+                                    <constraint firstItem="Rv9-WU-FhB" firstAttribute="top" secondItem="W7l-ha-NJQ" secondAttribute="top" id="voB-Bf-dLB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YBq-kr-uVS" firstAttribute="trailing" secondItem="W7l-ha-NJQ" secondAttribute="trailing" id="JUd-r1-1re"/>
+                            <constraint firstItem="W7l-ha-NJQ" firstAttribute="leading" secondItem="YBq-kr-uVS" secondAttribute="leading" id="kLA-Bk-TMD"/>
+                            <constraint firstItem="W7l-ha-NJQ" firstAttribute="top" secondItem="YBq-kr-uVS" secondAttribute="top" id="pJP-1A-wtL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YBq-kr-uVS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RKK-vb-2sX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="167" y="101"/>
+        </scene>
+        <!--My Perks View Controller-->
+        <scene sceneID="U5k-5i-JaK">
+            <objects>
+                <viewController storyboardIdentifier="MyPerksViewController" id="ao2-bN-XAV" customClass="MyPerksViewController" customModule="DemoArchitecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CsF-dU-sZL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yqc-Yd-YLp">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RKs-Q6-Edj">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUx-Bs-M3i">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="50"/>
+                                                <state key="normal" title="My Perks"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gcp-2w-Hvl">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="50"/>
+                                                <state key="normal" title="Library"/>
+                                                <connections>
+                                                    <action selector="library" destination="ao2-bN-XAV" eventType="touchUpInside" id="tkd-p0-t01"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="RKs-Q6-Edj" secondAttribute="trailing" id="3Zk-MU-3S9"/>
+                                    <constraint firstAttribute="height" constant="50" id="6sx-pC-r5H"/>
+                                    <constraint firstAttribute="bottom" secondItem="RKs-Q6-Edj" secondAttribute="bottom" id="JyS-fN-k8W"/>
+                                    <constraint firstItem="RKs-Q6-Edj" firstAttribute="leading" secondItem="Yqc-Yd-YLp" secondAttribute="leading" id="fWS-SC-eYC"/>
+                                    <constraint firstItem="RKs-Q6-Edj" firstAttribute="top" secondItem="Yqc-Yd-YLp" secondAttribute="top" id="s02-Ia-m2b"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Yqc-Yd-YLp" firstAttribute="leading" secondItem="CsF-dU-sZL" secondAttribute="leading" id="76N-DG-QDI"/>
+                            <constraint firstItem="Yqc-Yd-YLp" firstAttribute="top" secondItem="IWN-cR-1Fi" secondAttribute="top" id="Okb-yy-Al7"/>
+                            <constraint firstItem="IWN-cR-1Fi" firstAttribute="trailing" secondItem="Yqc-Yd-YLp" secondAttribute="trailing" id="eqd-Wd-wxq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IWN-cR-1Fi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PjP-hH-CrK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848" y="100"/>
+        </scene>
+    </scenes>
+</document>
